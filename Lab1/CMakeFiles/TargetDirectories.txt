@@ -1,0 +1,9 @@
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/CMakeFiles/lab1.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/mymath/CMakeFiles/mymath.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/mymath/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/mymath/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/myoutput/CMakeFiles/myoutput.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/myoutput/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/Программирование/Lab1/myoutput/CMakeFiles/rebuild_cache.dir
