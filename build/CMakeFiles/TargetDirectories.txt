@@ -1,0 +1,10 @@
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/Lab2.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/clang-format.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/planet/CMakeFiles/planet.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/planet/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/planet/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/computer/CMakeFiles/computer.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/computer/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/computer/CMakeFiles/rebuild_cache.dir

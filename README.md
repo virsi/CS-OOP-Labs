@@ -1,2 +1,1 @@
-# CS-OOP-Labs
-for BMSTU labs :)
+## Lab Planets
