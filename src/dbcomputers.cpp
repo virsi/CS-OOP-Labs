@@ -54,21 +54,26 @@ void dbcomputers::Append(char* filepath, computer::Computer* computer) {
 
 void dbcomputers::Remove(char* filepath, int computerId) {
     computer::Computer** computers = new computer::Computer*[BUF_SIZE];
-
     int n = dbcomputers::Read(filepath, computers);
-    for (int i = 0; i < n; ++i) {
-        if (computers[i]->GetId() == computerId) {
-            delete computers[i];
-            for (int j = i; j < n - 1; ++j) {
-                computers[j] = computers[j + 1];
-            }
-            n--;
-            break;
-        }
-        //можно добавить предупреждение что нет такого айди
-    }
 
-    dbcomputers::Write(filepath, computers, n);
+    if (computerId == -1) {
+        for (int i = 0; i < n; ++i) {
+            delete computers[i];
+        }
+        dbcomputers::Write(filepath, computers, 0);
+    } else {
+        for (int i = 0; i < n; ++i) {
+            if (computers[i]->GetId() == computerId) {
+                delete computers[i];
+                for (int j = i; j < n - 1; ++j) {
+                    computers[j] = computers[j + 1];
+                }
+                n--;
+                break;
+            }
+        }
+        dbcomputers::Write(filepath, computers, n);
+    }
 
     delete[] computers;
 }

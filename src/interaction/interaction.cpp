@@ -133,8 +133,8 @@ namespace interaction {
     }
 
     int ReadEntityId() {
-        int id = 0;
-        std::cout << "Введите ID сущности: ";
+        auto id = 0;
+        std::cout << "Введите ID сущности, или '-1', чтобы выбрать все сущности: ";
         std::cin >> id;
         return id;
     }
