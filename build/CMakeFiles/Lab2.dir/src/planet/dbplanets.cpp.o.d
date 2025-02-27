@@ -1,7 +1,7 @@
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o: \
-  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp \
-  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.hpp \
-  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/computer.hpp \
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o: \
+  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp \
+  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.hpp \
+  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/planet.hpp \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__config \
   /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk/usr/include/pthread.h \

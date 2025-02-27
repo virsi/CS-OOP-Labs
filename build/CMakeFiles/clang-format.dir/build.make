@@ -67,7 +67,7 @@ include CMakeFiles/clang-format.dir/compiler_depend.make
 include CMakeFiles/clang-format.dir/progress.make
 
 CMakeFiles/clang-format:
-	clang-format --dry-run -Werror /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/main.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.hpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.hpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.hpp
+	clang-format --dry-run -Werror /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/main.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.cpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.hpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.hpp /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.hpp
 
 clang-format: CMakeFiles/clang-format
 clang-format: CMakeFiles/clang-format.dir/build.make

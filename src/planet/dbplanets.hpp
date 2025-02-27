@@ -1,5 +1,5 @@
 #pragma once
-#include "planet/planet.hpp"
+#include "planet.hpp"
 
 namespace dbplanets {
     int Read(char* filepath, planet::Planet** planets);

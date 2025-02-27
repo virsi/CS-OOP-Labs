@@ -8,10 +8,10 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp" "CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o.d"
-  "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp" "CMakeFiles/Lab2.dir/src/dbplanets.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/dbplanets.cpp.o.d"
+  "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp" "CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o.d"
   "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.cpp" "CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o.d"
   "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/main.cpp" "CMakeFiles/Lab2.dir/src/main.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/main.cpp.o.d"
+  "/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp" "CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o" "gcc" "CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o.d"
   )
 
 # Targets to which this target links which contain Fortran sources.

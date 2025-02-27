@@ -257,7 +257,7 @@ CMakeFiles/Lab2.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bsd_locale_defaults.h \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/bitset \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__bit_reference \
-  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.hpp \
+  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.hpp \
   /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/planet.hpp \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/fstream \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/filesystem \
@@ -265,7 +265,7 @@ CMakeFiles/Lab2.dir/src/main.cpp.o: \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/deque \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/__split_buffer \
   /Library/Developer/CommandLineTools/usr/bin/../include/c++/v1/iomanip \
-  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.hpp \
+  /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.hpp \
   /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/computer.hpp \
   /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.hpp \
   /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/../planet/planet.hpp \

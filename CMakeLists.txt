@@ -6,13 +6,13 @@ project(Lab2) # <- project name
 
 set(SOURCES
     ${CMAKE_CURRENT_SOURCE_DIR}/src/main.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dbplanets.cpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dbcomputers.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/planet/dbplanets.cpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/computer/dbcomputers.cpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/interaction/interaction.cpp
 )
 set(HEADERS
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dbplanets.hpp
-    ${CMAKE_CURRENT_SOURCE_DIR}/src/dbcomputers.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/planet/dbplanets.hpp
+    ${CMAKE_CURRENT_SOURCE_DIR}/src/computer/dbcomputers.hpp
     ${CMAKE_CURRENT_SOURCE_DIR}/src/interaction/interaction.hpp
 )
 

@@ -83,33 +83,33 @@ CMakeFiles/Lab2.dir/src/main.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/main.cpp.s"
 	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/main.cpp -o CMakeFiles/Lab2.dir/src/main.cpp.s
 
-CMakeFiles/Lab2.dir/src/dbplanets.cpp.o: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/src/dbplanets.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp
-CMakeFiles/Lab2.dir/src/dbplanets.cpp.o: CMakeFiles/Lab2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/src/dbplanets.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab2.dir/src/dbplanets.cpp.o -MF CMakeFiles/Lab2.dir/src/dbplanets.cpp.o.d -o CMakeFiles/Lab2.dir/src/dbplanets.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o: CMakeFiles/Lab2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o -MF CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o.d -o CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp
 
-CMakeFiles/Lab2.dir/src/dbplanets.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/dbplanets.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp > CMakeFiles/Lab2.dir/src/dbplanets.cpp.i
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp > CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.i
 
-CMakeFiles/Lab2.dir/src/dbplanets.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/dbplanets.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbplanets.cpp -o CMakeFiles/Lab2.dir/src/dbplanets.cpp.s
+CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/planet/dbplanets.cpp -o CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.s
 
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o: CMakeFiles/Lab2.dir/flags.make
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o: CMakeFiles/Lab2.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o -MF CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o.d -o CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp
+CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o: CMakeFiles/Lab2.dir/flags.make
+CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp
+CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o: CMakeFiles/Lab2.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Building CXX object CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o -MF CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o.d -o CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp
 
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/dbcomputers.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp > CMakeFiles/Lab2.dir/src/dbcomputers.cpp.i
+CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp > CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.i
 
-CMakeFiles/Lab2.dir/src/dbcomputers.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/dbcomputers.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/dbcomputers.cpp -o CMakeFiles/Lab2.dir/src/dbcomputers.cpp.s
+CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/computer/dbcomputers.cpp -o CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.s
 
 CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o: CMakeFiles/Lab2.dir/flags.make
 CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/src/interaction/interaction.cpp
@@ -128,16 +128,16 @@ CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.s: cmake_force
 # Object files for target Lab2
 Lab2_OBJECTS = \
 "CMakeFiles/Lab2.dir/src/main.cpp.o" \
-"CMakeFiles/Lab2.dir/src/dbplanets.cpp.o" \
-"CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o" \
+"CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o" \
+"CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o" \
 "CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o"
 
 # External object files for target Lab2
 Lab2_EXTERNAL_OBJECTS =
 
 Lab2: CMakeFiles/Lab2.dir/src/main.cpp.o
-Lab2: CMakeFiles/Lab2.dir/src/dbplanets.cpp.o
-Lab2: CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o
+Lab2: CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o
 Lab2: CMakeFiles/Lab2.dir/src/interaction/interaction.cpp.o
 Lab2: CMakeFiles/Lab2.dir/build.make
 Lab2: src/planet/libplanet.a

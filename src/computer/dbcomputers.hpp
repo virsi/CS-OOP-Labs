@@ -1,5 +1,5 @@
 #pragma once
-#include "computer/computer.hpp"
+#include "computer.hpp"
 
 namespace dbcomputers {
     int Read(char* filepath, computer::Computer** shops);

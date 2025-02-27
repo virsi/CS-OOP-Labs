@@ -1,6 +1,6 @@
 #include <iostream>
-#include "dbplanets.hpp"
-#include "dbcomputers.hpp"
+#include "planet/dbplanets.hpp"
+#include "computer/dbcomputers.hpp"
 #include "interaction/interaction.hpp"
 #include "planet/planet.hpp"
 #include "computer/computer.hpp"

@@ -168,53 +168,29 @@ computer/fast:
 	$(MAKE) $(MAKESILENT) -f src/computer/CMakeFiles/computer.dir/build.make src/computer/CMakeFiles/computer.dir/build
 .PHONY : computer/fast
 
-src/dbcomputers.o: src/dbcomputers.cpp.o
-.PHONY : src/dbcomputers.o
+src/computer/dbcomputers.o: src/computer/dbcomputers.cpp.o
+.PHONY : src/computer/dbcomputers.o
 
 # target to build an object file
-src/dbcomputers.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbcomputers.cpp.o
-.PHONY : src/dbcomputers.cpp.o
+src/computer/dbcomputers.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.o
+.PHONY : src/computer/dbcomputers.cpp.o
 
-src/dbcomputers.i: src/dbcomputers.cpp.i
-.PHONY : src/dbcomputers.i
-
-# target to preprocess a source file
-src/dbcomputers.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbcomputers.cpp.i
-.PHONY : src/dbcomputers.cpp.i
-
-src/dbcomputers.s: src/dbcomputers.cpp.s
-.PHONY : src/dbcomputers.s
-
-# target to generate assembly for a file
-src/dbcomputers.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbcomputers.cpp.s
-.PHONY : src/dbcomputers.cpp.s
-
-src/dbplanets.o: src/dbplanets.cpp.o
-.PHONY : src/dbplanets.o
-
-# target to build an object file
-src/dbplanets.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbplanets.cpp.o
-.PHONY : src/dbplanets.cpp.o
-
-src/dbplanets.i: src/dbplanets.cpp.i
-.PHONY : src/dbplanets.i
+src/computer/dbcomputers.i: src/computer/dbcomputers.cpp.i
+.PHONY : src/computer/dbcomputers.i
 
 # target to preprocess a source file
-src/dbplanets.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbplanets.cpp.i
-.PHONY : src/dbplanets.cpp.i
+src/computer/dbcomputers.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.i
+.PHONY : src/computer/dbcomputers.cpp.i
 
-src/dbplanets.s: src/dbplanets.cpp.s
-.PHONY : src/dbplanets.s
+src/computer/dbcomputers.s: src/computer/dbcomputers.cpp.s
+.PHONY : src/computer/dbcomputers.s
 
 # target to generate assembly for a file
-src/dbplanets.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/dbplanets.cpp.s
-.PHONY : src/dbplanets.cpp.s
+src/computer/dbcomputers.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/computer/dbcomputers.cpp.s
+.PHONY : src/computer/dbcomputers.cpp.s
 
 src/interaction/interaction.o: src/interaction/interaction.cpp.o
 .PHONY : src/interaction/interaction.o
@@ -264,6 +240,30 @@ src/main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/main.cpp.s
 .PHONY : src/main.cpp.s
 
+src/planet/dbplanets.o: src/planet/dbplanets.cpp.o
+.PHONY : src/planet/dbplanets.o
+
+# target to build an object file
+src/planet/dbplanets.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.o
+.PHONY : src/planet/dbplanets.cpp.o
+
+src/planet/dbplanets.i: src/planet/dbplanets.cpp.i
+.PHONY : src/planet/dbplanets.i
+
+# target to preprocess a source file
+src/planet/dbplanets.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.i
+.PHONY : src/planet/dbplanets.cpp.i
+
+src/planet/dbplanets.s: src/planet/dbplanets.cpp.s
+.PHONY : src/planet/dbplanets.s
+
+# target to generate assembly for a file
+src/planet/dbplanets.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab2.dir/build.make CMakeFiles/Lab2.dir/src/planet/dbplanets.cpp.s
+.PHONY : src/planet/dbplanets.cpp.s
+
 # Help Target
 help:
 	@echo "The following are some of the valid targets for this Makefile:"
@@ -276,18 +276,18 @@ help:
 	@echo "... Lab2"
 	@echo "... computer"
 	@echo "... planet"
-	@echo "... src/dbcomputers.o"
-	@echo "... src/dbcomputers.i"
-	@echo "... src/dbcomputers.s"
-	@echo "... src/dbplanets.o"
-	@echo "... src/dbplanets.i"
-	@echo "... src/dbplanets.s"
+	@echo "... src/computer/dbcomputers.o"
+	@echo "... src/computer/dbcomputers.i"
+	@echo "... src/computer/dbcomputers.s"
 	@echo "... src/interaction/interaction.o"
 	@echo "... src/interaction/interaction.i"
 	@echo "... src/interaction/interaction.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
+	@echo "... src/planet/dbplanets.o"
+	@echo "... src/planet/dbplanets.i"
+	@echo "... src/planet/dbplanets.s"
 .PHONY : help
 
 
