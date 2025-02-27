@@ -93,6 +93,9 @@ void dbplanets::Print(char* filepath) {
         return;
     }
 
+    int width = 15;
+    std::cout << std::setw(width) << "ID" << std::setw(width) << "NAME" << std::setw(width)
+        << "DIAMETER" << std::setw(width)<< "LIFE"<< std::setw(width)<< "SATTELITES" << std::setw(width) << '\n';
     for (int i = 0; i < n; ++i) {
         planets[i]->PrettyPrint();
     }

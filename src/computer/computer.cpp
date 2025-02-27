@@ -29,6 +29,19 @@ namespace computer {
         std::strncpy(this->serialNumber, serialNumber, std::strlen(serialNumber) + 1);
     }
 
+    Computer::Computer(){
+        this->os = new char[BUF_SIZE];
+        this->serialNumber = new char[BUF_SIZE];
+
+        std::strcpy(os, " ");
+        std::strcpy(os, " ");
+    }
+
+    Computer::Computer(const Computer& obj): frequencyCPU(obj.frequencyCPU), ram(obj.ram), rom(obj.rom) {
+        SetOS(obj.os);
+        SetSerialNumber(obj.serialNumber);
+    }
+
     Computer::~Computer() {
         delete[] this->os;
         delete[] this->serialNumber;
@@ -38,15 +51,8 @@ namespace computer {
         return this->id;
     }
 
-    // void Computer::PrettyPrint() const {
-    //     std::cout << "{ID: '" << this->id << "', OS: '" << this->os << "', Serial Number: '"
-    //               << this->serialNumber << "', CPU Frequency: '" << this->frequencyCPU << "', RAM: '"
-    //               << this->ram << "GB', ROM: '" << rom << "GB' }" << std::endl;
-    // }
-
     void Computer::PrettyPrint() const {
         int width = 15; // Ширина каждого столбца
-        //std::cout << std::left; // Выравнивание по левому кра
         std::cout << std::setw(width) << this->id << std::setw(width) << this->os << std::setw(width) << this->serialNumber<< std::setw(width)
             << this->frequencyCPU << std::setw(width) << this->ram << std::setw(width) << this->rom << '\n';;
     }
@@ -80,6 +86,28 @@ namespace computer {
         return s;
     }
 
+    Computer& Computer::operator=(const Computer& obj) {
+        if (this == &obj) {
+            return *this;
+        }
+
+        delete[] this->os;
+        delete[] this->serialNumber;
+
+        this->id = obj.id;
+        this->frequencyCPU = obj.frequencyCPU;
+        this->ram = obj.ram;
+        this->rom = obj.rom;
+
+        this->os = new char[std::strlen(obj.os) + 1];
+        std::strncpy(this->os, obj.os, std::strlen(obj.os) + 1);
+
+        this->serialNumber = new char[std::strlen(obj.serialNumber) + 1];
+        std::strncpy(this->serialNumber, obj.serialNumber, std::strlen(obj.serialNumber) + 1);
+
+        return *this;
+    }
+
     bool operator==(const Computer& e1, const Computer& e2) {
         return e1.frequencyCPU == e2.frequencyCPU;
     }
@@ -87,7 +115,11 @@ namespace computer {
     bool operator<(const Computer& e1, const Computer& e2) {
         return e1.frequencyCPU < e2.frequencyCPU;
     }
+
+    void Computer::SetOS(char* os_){delete[] os; os = new char[std::strlen(os_) + 1]; std::strcpy(os, os_);}
+    void Computer::SetSerialNumber(char* sN_){delete[] serialNumber; serialNumber = new char[std::strlen(sN_) + 1]; std::strcpy(serialNumber, sN_);}
 }  // namespace computer
 
 
-//конструктор копирования, редактирование, перегрузка присваивания, конструктор без параметров, очистка памяти после выхода, табличный вывод
+//редактирование, очистка памяти после выхода,
+//редактирование, очистка памяти после выхода, таблица вывода
