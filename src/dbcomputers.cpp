@@ -1,5 +1,6 @@
 #include "dbcomputers.hpp"
 #include <iostream>
+#include <iomanip>
 #include "fstream"
 
 namespace {
@@ -98,7 +99,10 @@ void dbcomputers::Print(char* filepath) {
         std::cout << "Таблица пуста!" << std::endl;
         return;
     }
-
+    int width = 15;
+    std::cout << std::setw(width) << "ID" << std::setw(width) << "OS" << std::setw(width)
+        << "Serial Number" << std::setw(width)<< "CPU frequency"<< std::setw(width)<< "RAM" << std::setw(width)
+        << "ROM" << std::setw(width) << '\n';
     for (int i = 0; i < n; ++i) {
         computers[i]->PrettyPrint();
     }

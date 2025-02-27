@@ -14,14 +14,14 @@ namespace computer {
         public:
             static int lastId;
             Computer(int id, char* os, char* serialNumber, int frequencyCPU, int ram, int rom);
-            // Computer() = default;
+            //Computer();
             ~Computer();
 
             int GetId() const;
             void PrettyPrint() const;
 
             friend std::istream& operator>>(std::istream& s, Computer*& p);
-            friend std::ostream& operator<<(std::ostream& s, Computer* p);
+            friend std::ostream& operator<<(std::ostream& s, const Computer* p);
             friend bool operator<(const Computer& e1, const Computer& e2);
             friend bool operator==(const Computer& e1, const Computer& e2);
     };

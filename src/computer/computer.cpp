@@ -2,6 +2,7 @@
 #include <algorithm>
 #include <cstring>
 #include <iostream>
+#include <iomanip>
 
 namespace {
     int BUF_SIZE = 128;
@@ -37,11 +38,19 @@ namespace computer {
         return this->id;
     }
 
+    // void Computer::PrettyPrint() const {
+    //     std::cout << "{ID: '" << this->id << "', OS: '" << this->os << "', Serial Number: '"
+    //               << this->serialNumber << "', CPU Frequency: '" << this->frequencyCPU << "', RAM: '"
+    //               << this->ram << "GB', ROM: '" << rom << "GB' }" << std::endl;
+    // }
+
     void Computer::PrettyPrint() const {
-        std::cout << "{ID: '" << this->id << "', OS: '" << this->os << "', Serial Number: '"
-                  << this->serialNumber << "', CPU Frequency: '" << this->frequencyCPU << "', RAM: '"
-                  << this->ram << "GB', ROM: '" << rom << "GB' }" << std::endl;
+        int width = 15; // Ширина каждого столбца
+        //std::cout << std::left; // Выравнивание по левому кра
+        std::cout << std::setw(width) << this->id << std::setw(width) << this->os << std::setw(width) << this->serialNumber<< std::setw(width)
+            << this->frequencyCPU << std::setw(width) << this->ram << std::setw(width) << this->rom << '\n';;
     }
+
 
     std::istream& operator>>(std::istream& s, Computer*& p) {
         int id = 0;
@@ -65,7 +74,7 @@ namespace computer {
         return s;
     }
 
-    std::ostream& operator<<(std::ostream& s, Computer* p) {
+    std::ostream& operator<<(std::ostream& s, const Computer* p) {
         s << p->id << " " << p->os << " " << p->serialNumber << " " << p->frequencyCPU << " "
           << p->ram << " " << p->rom;
         return s;
@@ -79,3 +88,6 @@ namespace computer {
         return e1.frequencyCPU < e2.frequencyCPU;
     }
 }  // namespace computer
+
+
+//конструктор копирования, редактирование, перегрузка присваивания, конструктор без параметров, очистка памяти после выхода, табличный вывод
