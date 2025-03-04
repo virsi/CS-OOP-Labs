@@ -1,6 +1,8 @@
 #include "interaction.hpp"
 #include <cstring>
 #include <iostream>
+#include <limits>
+
 
 namespace {
     const int BUF_SIZE = 512;
@@ -18,7 +20,7 @@ namespace interaction {
     EntityType ReadEntityInteractionType() {
         int type = 0;
         while (!isValidEntityType(type)) {
-            std::cout << "Введите тип сущности (1 - планета, 2 - компьтер): ";
+            std::cout << "Введите сущность \n 1 - планета, \n 2 - компьтер ";
             std::cin >> type;
 
             if (!isValidEntityType(type)) {
@@ -91,14 +93,40 @@ namespace interaction {
 
         std::cout << "Операционная система: ";
         std::cin >> os;
+        // Проверка на кириллицу
+        while (!std::isalpha(os[0])) {
+            std::cout << "Некорректный ввод. Пожалуйста, введите имя операционной системы снова: ";
+            std::cin >> os;
+        }
+
         std::cout << "Серийный номер компьютера: ";
         std::cin >> serialNumber;
+        // Проверка на кириллицу
+        while (!std::isalnum(serialNumber[0])) {
+            std::cout << "Некорректный ввод. Пожалуйста, введите серийный номер снова: ";
+            std::cin >> serialNumber;
+        }
+
         std::cout << "Тактовая частота процессора: ";
-        std::cin >> frequencyCPU;
+        while (!(std::cin >> frequencyCPU)) {
+            std::cout << "Некорректный ввод. Пожалуйста, введите целое число для тактовой частоты процессора: ";
+            std::cin.clear(); // Очистка флага ошибки
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n'); // Игнорируем неправильный ввод
+        }
+
         std::cout << "Объем оперативной памяти: ";
-        std::cin >> ram;
+        while (!(std::cin >> ram)) {
+            std::cout << "Некорректный ввод. Пожалуйста, введите целое число для объема оперативной памяти: ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
+
         std::cout << "Объем накопителя: ";
-        std::cin >> rom;
+        while (!(std::cin >> rom)) {
+            std::cout << "Некорректный ввод. Пожалуйста, введите целое число для объема накопителя: ";
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+        }
 
         return new computer::Computer(-1, os, serialNumber, frequencyCPU, ram, rom);
     }
@@ -118,14 +146,30 @@ namespace interaction {
 
     DatabaseInteractionType ReadDatabaseInteractionType() {
         int type = 0;
-        while (!isValidDatabaseInteractionType(type)) {
-            std::cout << "Введите тип действия (1 - прочитать базу данных, 2 - перезаписать, 3 - "
-                         "добавить, 4 - "
-                         "удалить, 5 - сортировать, 6 - выйти): ";
-            std::cin >> type;
 
+        // Цикл продолжается, пока не будет введен корректный тип действия
+        while (!isValidDatabaseInteractionType(type)) {
+            std::cout << "Введите тип действия\n"
+                      << "1 - прочитать базу данных,\n"
+                      << "2 - перезаписать,\n"
+                      << "3 - добавить,\n"
+                      << "4 - удалить,\n"
+                      << "5 - сортировать,\n"
+                      << "6 - выйти\n";
+
+            // Очистка буфера cin перед каждым новым вводом
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+            // Проверяем, успешно ли считан целый тип
+            if (!(std::cin >> type)) {
+                std::cout << "Некорректный ввод! Пожалуйста, введите число.\n";
+                continue;
+            }
+
+            // Проверяем валидность значения после успешного чтения числа
             if (!isValidDatabaseInteractionType(type)) {
-                std::cout << "Некорректный тип действия!" << std::endl;
+                std::cout << "Некорректный тип действия!\n";
             }
         }
 
@@ -133,9 +177,22 @@ namespace interaction {
     }
 
     int ReadEntityId() {
-        auto id = 0;
-        std::cout << "Введите ID сущности, или '-1', чтобы выбрать все сущности: ";
-        std::cin >> id;
-        return id;
+        int id = 0;
+
+        while (true) {
+            std::cout << "Введите ID сущности, или '-1', чтобы выбрать все сущности: ";
+
+            // Сбрасываем возможные ошибки и очищаем буфер ввода
+            std::cin.clear();
+            std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+
+            // Проверяем успешность ввода целого числа
+            if (std::cin >> id) {
+                return id;
+            }
+
+            // Сообщаем пользователю о некорректном вводе
+            std::cout << "Ошибка ввода. Попробуйте еще раз." << std::endl;
+        }
     }
 }  // namespace interaction
