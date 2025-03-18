@@ -37,6 +37,19 @@ namespace computer {
         std::strcpy(os, " ");
     }
 
+    Computer::Computer(const Computer& obj) {
+        this->id = obj.id;
+        this->frequencyCPU = obj.frequencyCPU;
+        this->ram = obj.ram;
+        this->rom = obj.rom;
+
+        this->os = new char[std::strlen(obj.os) + 1];
+        std::strncpy(this->os, obj.os, std::strlen(obj.os) + 1);
+
+        this->serialNumber = new char[std::strlen(obj.serialNumber) + 1];
+        std::strncpy(this->serialNumber, obj.serialNumber, std::strlen(obj.serialNumber) + 1);
+    }
+
     Computer::Computer(const Computer& obj): frequencyCPU(obj.frequencyCPU), ram(obj.ram), rom(obj.rom) {
         SetOS(obj.os);
         SetSerialNumber(obj.serialNumber);
