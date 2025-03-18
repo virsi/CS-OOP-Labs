@@ -152,7 +152,12 @@ namespace fraction {
     std::istream& operator>>(std::istream& s, Fraction& f) {
         char input[MAX_INPUT_LEN];
 
-        s.getline(input, MAX_INPUT_LEN);
+        if (!s.getline(input, MAX_INPUT_LEN)) {
+            std::cerr << "Input buffer overflow detected" << std::endl;
+            s.clear(std::istream::failbit);
+            exit(1);
+        }
+
         Fraction* parsedFraction = ParseFraction(input);
         f = *parsedFraction;
         delete parsedFraction;
