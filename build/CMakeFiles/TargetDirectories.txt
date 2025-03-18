@@ -1,0 +1,6 @@
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/Lab3.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/fractions/CMakeFiles/fractions.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/fractions/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/fractions/CMakeFiles/rebuild_cache.dir
