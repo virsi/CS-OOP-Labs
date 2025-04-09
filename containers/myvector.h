@@ -87,13 +87,25 @@ public:
     };
 
     T& operator[](int index) {
-        if (index < 0 || index >= size) {
-            throw std::out_of_range("Index out of range");
+        if (index < 0 || index >= this->size) {
+            throw std::out_of_range("Индекс убежал");
         }
         return this->data[index];
     }
 
-    friend std::ostream &operator<<(std::ostream &out, MyVector &v);
+    friend std::ostream &operator<<(std::ostream &out, MyVector &v) {
+        if (v.size == 0) {
+            out << "Пустой вектор";
+        } else {
+            out << "[";
+            for (unsigned i = 0; i < v.size; ++i) {
+                out << v.data[i];
+                if (i < v.size - 1) out << ", ";
+            }
+            out << "]";
+        }
+        return out;
+    }
 };
 
 #endif // INHERITANCE_MYVECTOR_H
