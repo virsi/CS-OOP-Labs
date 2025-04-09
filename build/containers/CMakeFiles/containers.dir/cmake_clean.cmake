@@ -1,4 +1,6 @@
 file(REMOVE_RECURSE
+  "CMakeFiles/containers.dir/myset.cpp.o"
+  "CMakeFiles/containers.dir/myset.cpp.o.d"
   "CMakeFiles/containers.dir/myvector.cpp.o"
   "CMakeFiles/containers.dir/myvector.cpp.o.d"
   "libcontainers.a"

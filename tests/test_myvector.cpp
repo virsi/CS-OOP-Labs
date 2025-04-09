@@ -54,7 +54,7 @@ void test_operator_index() {
     assert(v[1] == 20);
     try {
         v[2];
-        assert(false); // Should not reach here
+        assert(false);
     } catch (const std::out_of_range&) {
         std::cout << "test_operator_index passed\n";
     }

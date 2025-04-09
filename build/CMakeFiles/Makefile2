@@ -98,12 +98,12 @@ containers/clean: containers/CMakeFiles/containers.dir/clean
 CMakeFiles/lab5.dir/all: containers/CMakeFiles/containers.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=3,4 "Built target lab5"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=4,5 "Built target lab5"
 .PHONY : CMakeFiles/lab5.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/lab5.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 4
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 5
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/lab5.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
 .PHONY : CMakeFiles/lab5.dir/rule
@@ -124,12 +124,12 @@ CMakeFiles/lab5.dir/clean:
 containers/CMakeFiles/containers.dir/all:
 	$(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/depend
 	$(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=1,2 "Built target containers"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=1,2,3 "Built target containers"
 .PHONY : containers/CMakeFiles/containers.dir/all
 
 # Build rule for subdir invocation for target.
 containers/CMakeFiles/containers.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 2
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 3
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/CMakeFiles/containers.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
 .PHONY : containers/CMakeFiles/containers.dir/rule

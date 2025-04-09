@@ -130,6 +130,30 @@ containers/fast:
 	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
 .PHONY : containers/fast
 
+myset.o: myset.cpp.o
+.PHONY : myset.o
+
+# target to build an object file
+myset.cpp.o:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.o
+.PHONY : myset.cpp.o
+
+myset.i: myset.cpp.i
+.PHONY : myset.i
+
+# target to preprocess a source file
+myset.cpp.i:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.i
+.PHONY : myset.cpp.i
+
+myset.s: myset.cpp.s
+.PHONY : myset.s
+
+# target to generate assembly for a file
+myset.cpp.s:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.s
+.PHONY : myset.cpp.s
+
 myvector.o: myvector.cpp.o
 .PHONY : myvector.o
 
@@ -163,6 +187,9 @@ help:
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
 	@echo "... containers"
+	@echo "... myset.o"
+	@echo "... myset.i"
+	@echo "... myset.s"
 	@echo "... myvector.o"
 	@echo "... myvector.i"
 	@echo "... myvector.s"

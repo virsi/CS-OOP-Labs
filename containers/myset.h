@@ -37,11 +37,11 @@ int binary_search(T* data, int left, int right, T value) {
 
     int mid = (left + right) / 2;
 
-    if (compare(data[mid], value) == 0) { // Исправлено
+    if (compare(data[mid], value) == 0) {
         return mid;
     }
 
-    if (compare(data[mid], value) < 0) { // Исправлено
+    if (compare(data[mid], value) < 0) {
         return binary_search(data, mid + 1, right, value);
     }
 
@@ -58,7 +58,7 @@ void quick_sort(T* data, int left, int right) {
     int i = left - 1;
 
     for (int j = left; j < right; ++j) {
-        if (compare(data[j], pivot) < 0) { // Исправлено
+        if (compare(data[j], pivot) < 0) {
             ++i;
             std::swap(data[i], data[j]);
         }
@@ -73,19 +73,19 @@ void quick_sort(T* data, int left, int right) {
 template <typename T>
 class MySet : public MyVector<T> {
 public:
-    MySet() : MyVector<T>() {}; // Убрали аргумент el
+    MySet() : MyVector<T>() {};
 
     bool operator==(MySet &s) {
         if (this->size != s.size) return false;
         for (int i = 0; i < this->size; ++i) {
-            if (s.q_find(this->data[i]) == -1) return false; // Используем q_find
+            if (s.q_find(this->data[i]) == -1) return false;
         }
         return true;
     }
 
     MySet &operator+=(MySet &s) {
         for (int i = 0; i < s.size; ++i) {
-            if (this->q_find(s.data[i]) == -1) { // Используем q_find
+            if (this->q_find(s.data[i]) == -1) {
                 this->add_element(s.data[i]);
             }
         }
@@ -101,17 +101,17 @@ public:
 
     MySet &operator*=(MySet &s) {
         for (int i = 0; i < this->size; ++i) {
-            if (s.q_find(this->data[i]) == -1) { // Используем q_find
+            if (s.q_find(this->data[i]) == -1) {
                 this->delete_element(this->data[i]);
-                --i; // Корректируем индекс после удаления
+                --i;
             }
         }
         return *this;
     }
 
     MySet &operator=(const MySet &s) {
-        if (this == &s) return *this; // Проверка на самоприсваивание
-        MyVector<T>::operator=(s);   // Вызов оператора = базового класса
+        if (this == &s) return *this;
+        MyVector<T>::operator=(s);
         return *this;
     }
 
@@ -119,15 +119,15 @@ public:
     int q_find(T value) const { return binary_search(this->data, 0, this->size - 1, value); }
 
     void add_element(T el) {
-        if (this->q_find(el) == -1) { // Используем q_find для быстрого поиска
+        if (this->q_find(el) == -1) {
             MyVector<T>::add_element(el);
-            q_sort(); // Сортируем после добавления
+            q_sort();
         }
     }
 
     void delete_element(T el) {
         MyVector<T>::delete_element(el);
-        q_sort(); // Сортируем после удаления
+        q_sort();
     }
 
     friend std::ostream &operator<<(std::ostream &out, MySet<T> &s) {

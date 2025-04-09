@@ -83,17 +83,33 @@ containers/CMakeFiles/containers.dir/myvector.cpp.s: cmake_force
 	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/containers.dir/myvector.cpp.s"
 	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers/myvector.cpp -o CMakeFiles/containers.dir/myvector.cpp.s
 
+containers/CMakeFiles/containers.dir/myset.cpp.o: containers/CMakeFiles/containers.dir/flags.make
+containers/CMakeFiles/containers.dir/myset.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers/myset.cpp
+containers/CMakeFiles/containers.dir/myset.cpp.o: containers/CMakeFiles/containers.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Building CXX object containers/CMakeFiles/containers.dir/myset.cpp.o"
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT containers/CMakeFiles/containers.dir/myset.cpp.o -MF CMakeFiles/containers.dir/myset.cpp.o.d -o CMakeFiles/containers.dir/myset.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers/myset.cpp
+
+containers/CMakeFiles/containers.dir/myset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/containers.dir/myset.cpp.i"
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers/myset.cpp > CMakeFiles/containers.dir/myset.cpp.i
+
+containers/CMakeFiles/containers.dir/myset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/containers.dir/myset.cpp.s"
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && /Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers/myset.cpp -o CMakeFiles/containers.dir/myset.cpp.s
+
 # Object files for target containers
 containers_OBJECTS = \
-"CMakeFiles/containers.dir/myvector.cpp.o"
+"CMakeFiles/containers.dir/myvector.cpp.o" \
+"CMakeFiles/containers.dir/myset.cpp.o"
 
 # External object files for target containers
 containers_EXTERNAL_OBJECTS =
 
 containers/libcontainers.a: containers/CMakeFiles/containers.dir/myvector.cpp.o
+containers/libcontainers.a: containers/CMakeFiles/containers.dir/myset.cpp.o
 containers/libcontainers.a: containers/CMakeFiles/containers.dir/build.make
 containers/libcontainers.a: containers/CMakeFiles/containers.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Linking CXX static library libcontainers.a"
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --bold --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Linking CXX static library libcontainers.a"
 	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && $(CMAKE_COMMAND) -P CMakeFiles/containers.dir/cmake_clean_target.cmake
 	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers && $(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/containers.dir/link.txt --verbose=$(VERBOSE)
 

@@ -6,10 +6,10 @@ project(${project})
 set(CMAKE_CXX_STANDARD 17)
 
 set(${project}_SOURCES
-        myvector.cpp) # myset.cpp
+        myvector.cpp myset.cpp)
 
 set(${project}_HEADERS
-        myvector.h) #myset.h
+        myvector.h myset.h)
 
 set(${project}_SOURCE_LIST
         ${${project}_SOURCES}

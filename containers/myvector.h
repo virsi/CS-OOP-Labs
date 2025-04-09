@@ -92,7 +92,7 @@ public:
         return -1;
     }
 
-    MyVector &operator=(const MyVector &v) { // Изменено: добавлена const
+    MyVector &operator=(const MyVector &v) {
         if (this == &v) {
             return *this;
         }
