@@ -74,7 +74,7 @@ public:
         if (this == v){
             return *this;
         }
-        
+
         this->size = v.size;
         this->max_size = v.max_size;
         delete[] this->data;
@@ -86,7 +86,12 @@ public:
         return *this;
     };
 
-    T& operator[](int index) { return this->data[index]; }
+    T& operator[](int index) {
+        if (index < 0 || index >= size) {
+            throw std::out_of_range("Index out of range");
+        }
+        return this->data[index];
+    }
 
     friend std::ostream &operator<<(std::ostream &out, MyVector &v);
 };
