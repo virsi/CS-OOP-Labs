@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build//CMakeFiles/progress.marks
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 all
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/collections/stack//CMakeFiles/progress.marks
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clean
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,94 +103,56 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 preinstall
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
-#=============================================================================
-# Target rules for targets named StackImpl
+# Convenience name for target.
+src/collections/stack/CMakeFiles/stack.dir/rule:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/CMakeFiles/stack.dir/rule
+.PHONY : src/collections/stack/CMakeFiles/stack.dir/rule
 
-# Build rule for target.
-StackImpl: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 StackImpl
-.PHONY : StackImpl
-
-# fast build rule for target.
-StackImpl/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/build
-.PHONY : StackImpl/fast
-
-#=============================================================================
-# Target rules for targets named clang-format
-
-# Build rule for target.
-clang-format: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clang-format
-.PHONY : clang-format
-
-# fast build rule for target.
-clang-format/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-format.dir/build.make CMakeFiles/clang-format.dir/build
-.PHONY : clang-format/fast
-
-#=============================================================================
-# Target rules for targets named stack
-
-# Build rule for target.
-stack: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 stack
+# Convenience name for target.
+stack: src/collections/stack/CMakeFiles/stack.dir/rule
 .PHONY : stack
 
 # fast build rule for target.
 stack/fast:
-	$(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/build
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/build
 .PHONY : stack/fast
 
-#=============================================================================
-# Target rules for targets named app
-
-# Build rule for target.
-app: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 app
-.PHONY : app
-
-# fast build rule for target.
-app/fast:
-	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/build
-.PHONY : app/fast
-
-src/main.o: src/main.cpp.o
-.PHONY : src/main.o
+stack.o: stack.cpp.o
+.PHONY : stack.o
 
 # target to build an object file
-src/main.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/src/main.cpp.o
-.PHONY : src/main.cpp.o
+stack.cpp.o:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/stack.cpp.o
+.PHONY : stack.cpp.o
 
-src/main.i: src/main.cpp.i
-.PHONY : src/main.i
+stack.i: stack.cpp.i
+.PHONY : stack.i
 
 # target to preprocess a source file
-src/main.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/src/main.cpp.i
-.PHONY : src/main.cpp.i
+stack.cpp.i:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/stack.cpp.i
+.PHONY : stack.cpp.i
 
-src/main.s: src/main.cpp.s
-.PHONY : src/main.s
+stack.s: stack.cpp.s
+.PHONY : stack.s
 
 # target to generate assembly for a file
-src/main.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/src/main.cpp.s
-.PHONY : src/main.cpp.s
+stack.cpp.s:
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/stack.cpp.s
+.PHONY : stack.cpp.s
 
 # Help Target
 help:
@@ -200,13 +162,10 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... clang-format"
-	@echo "... StackImpl"
-	@echo "... app"
 	@echo "... stack"
-	@echo "... src/main.o"
-	@echo "... src/main.i"
-	@echo "... src/main.s"
+	@echo "... stack.o"
+	@echo "... stack.i"
+	@echo "... stack.s"
 .PHONY : help
 
 
@@ -218,6 +177,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	$(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

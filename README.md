@@ -1,2 +1,1 @@
-# CS-OOP-Labs
-for BMSTU labs :)
+## C++ CS Labs

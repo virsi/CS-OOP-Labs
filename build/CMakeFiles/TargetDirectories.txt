@@ -1,6 +1,10 @@
-/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/Lab4.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/StackImpl.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/clang-format.dir
 /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/edit_cache.dir
 /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/rebuild_cache.dir
-/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/mystack/CMakeFiles/mystack.dir
-/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/mystack/CMakeFiles/edit_cache.dir
-/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/mystack/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/collections/stack/CMakeFiles/stack.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/collections/stack/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/collections/stack/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/app/CMakeFiles/app.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/app/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/app/CMakeFiles/rebuild_cache.dir

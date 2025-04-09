@@ -1,41 +1,25 @@
-#include "./mystack/MyStack.h"
+#include <iostream>
+#include "app/app.hpp"
+#include "collections/stack/stack.hpp"
 
 int main() {
-    int number;
-    MyStack<int> stack;
+    int number = 0;
+    std::cout << "Введите число(int): ";
+    std::cin >> number;
 
-    Multipliers(number, stack);
-
-    if (stack.empty()) {
-        std::cout << "Число не имеет простых множителей." << std::endl;
-    } else {
-        std::cout << number << "=";
-
-        // Печать по убыванию (LIFO)
-        MyStack<int> tempStack = stack; // Копия для сохранения исходных данных
-        while (!tempStack.empty()) {
-            std::cout << tempStack.top_inf();
-            tempStack.pop();
-            if (!tempStack.empty()) std::cout << " * ";
-        }
-
-        std::cout << std::endl << number << "=";
-
-        // Печать по возрастанию (разворачиваем стек)
-        MyStack<int> reverseStack;
-        while (!stack.empty()) {
-            reverseStack.push(stack.top_inf());
-            stack.pop();
-        }
-
-        while (!reverseStack.empty()) {
-            std::cout << reverseStack.top_inf();
-            reverseStack.pop();
-            if (!reverseStack.empty()) std::cout << " * ";
-        }
-        std::cout << std::endl;
+    if (number == 0) {
+        std::cout << "0 не имеет делителей";
+        return 0;
     }
 
-    return 0;
+    stack::Stack<int> stack;
+    app::FactorizeNumber(number, stack);
 
+    std::cout << number << " = ";
+    app::PrintIntStack(stack);
+    stack.reverse();
+
+    std::cout << number << " = ";
+    app::PrintIntStack(stack);
+    return 0;
 }

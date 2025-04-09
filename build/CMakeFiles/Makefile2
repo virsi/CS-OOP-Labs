@@ -63,85 +63,157 @@ CMAKE_BINARY_DIR = /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build
 # Directory level rules for the build root directory
 
 # The main recursive "all" target.
-all: CMakeFiles/Lab4.dir/all
-all: src/mystack/all
+all: CMakeFiles/StackImpl.dir/all
+all: src/collections/stack/all
+all: src/app/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
-preinstall: src/mystack/preinstall
+preinstall: src/collections/stack/preinstall
+preinstall: src/app/preinstall
 .PHONY : preinstall
 
 # The main recursive "clean" target.
-clean: CMakeFiles/Lab4.dir/clean
-clean: src/mystack/clean
+clean: CMakeFiles/StackImpl.dir/clean
+clean: CMakeFiles/clang-format.dir/clean
+clean: src/collections/stack/clean
+clean: src/app/clean
 .PHONY : clean
 
 #=============================================================================
-# Directory level rules for directory src/mystack
+# Directory level rules for directory src/app
 
 # Recursive "all" directory target.
-src/mystack/all: src/mystack/CMakeFiles/mystack.dir/all
-.PHONY : src/mystack/all
+src/app/all: src/app/CMakeFiles/app.dir/all
+.PHONY : src/app/all
 
 # Recursive "preinstall" directory target.
-src/mystack/preinstall:
-.PHONY : src/mystack/preinstall
+src/app/preinstall:
+.PHONY : src/app/preinstall
 
 # Recursive "clean" directory target.
-src/mystack/clean: src/mystack/CMakeFiles/mystack.dir/clean
-.PHONY : src/mystack/clean
+src/app/clean: src/app/CMakeFiles/app.dir/clean
+.PHONY : src/app/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/Lab4.dir
+# Directory level rules for directory src/collections/stack
+
+# Recursive "all" directory target.
+src/collections/stack/all: src/collections/stack/CMakeFiles/stack.dir/all
+.PHONY : src/collections/stack/all
+
+# Recursive "preinstall" directory target.
+src/collections/stack/preinstall:
+.PHONY : src/collections/stack/preinstall
+
+# Recursive "clean" directory target.
+src/collections/stack/clean: src/collections/stack/CMakeFiles/stack.dir/clean
+.PHONY : src/collections/stack/clean
+
+#=============================================================================
+# Target rules for target CMakeFiles/StackImpl.dir
 
 # All Build rule for target.
-CMakeFiles/Lab4.dir/all: src/mystack/CMakeFiles/mystack.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=1,2 "Built target Lab4"
-.PHONY : CMakeFiles/Lab4.dir/all
+CMakeFiles/StackImpl.dir/all: src/collections/stack/CMakeFiles/stack.dir/all
+CMakeFiles/StackImpl.dir/all: src/app/CMakeFiles/app.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=1,2 "Built target StackImpl"
+.PHONY : CMakeFiles/StackImpl.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/Lab4.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 4
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/Lab4.dir/all
+CMakeFiles/StackImpl.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 6
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/StackImpl.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
-.PHONY : CMakeFiles/Lab4.dir/rule
+.PHONY : CMakeFiles/StackImpl.dir/rule
 
 # Convenience name for target.
-Lab4: CMakeFiles/Lab4.dir/rule
-.PHONY : Lab4
+StackImpl: CMakeFiles/StackImpl.dir/rule
+.PHONY : StackImpl
 
 # clean rule for target.
-CMakeFiles/Lab4.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Lab4.dir/build.make CMakeFiles/Lab4.dir/clean
-.PHONY : CMakeFiles/Lab4.dir/clean
+CMakeFiles/StackImpl.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/StackImpl.dir/build.make CMakeFiles/StackImpl.dir/clean
+.PHONY : CMakeFiles/StackImpl.dir/clean
 
 #=============================================================================
-# Target rules for target src/mystack/CMakeFiles/mystack.dir
+# Target rules for target CMakeFiles/clang-format.dir
 
 # All Build rule for target.
-src/mystack/CMakeFiles/mystack.dir/all:
-	$(MAKE) $(MAKESILENT) -f src/mystack/CMakeFiles/mystack.dir/build.make src/mystack/CMakeFiles/mystack.dir/depend
-	$(MAKE) $(MAKESILENT) -f src/mystack/CMakeFiles/mystack.dir/build.make src/mystack/CMakeFiles/mystack.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=3,4 "Built target mystack"
-.PHONY : src/mystack/CMakeFiles/mystack.dir/all
+CMakeFiles/clang-format.dir/all:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-format.dir/build.make CMakeFiles/clang-format.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-format.dir/build.make CMakeFiles/clang-format.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num= "Built target clang-format"
+.PHONY : CMakeFiles/clang-format.dir/all
 
 # Build rule for subdir invocation for target.
-src/mystack/CMakeFiles/mystack.dir/rule: cmake_check_build_system
+CMakeFiles/clang-format.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/clang-format.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
+.PHONY : CMakeFiles/clang-format.dir/rule
+
+# Convenience name for target.
+clang-format: CMakeFiles/clang-format.dir/rule
+.PHONY : clang-format
+
+# clean rule for target.
+CMakeFiles/clang-format.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/clang-format.dir/build.make CMakeFiles/clang-format.dir/clean
+.PHONY : CMakeFiles/clang-format.dir/clean
+
+#=============================================================================
+# Target rules for target src/collections/stack/CMakeFiles/stack.dir
+
+# All Build rule for target.
+src/collections/stack/CMakeFiles/stack.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=5,6 "Built target stack"
+.PHONY : src/collections/stack/CMakeFiles/stack.dir/all
+
+# Build rule for subdir invocation for target.
+src/collections/stack/CMakeFiles/stack.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 2
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/mystack/CMakeFiles/mystack.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/collections/stack/CMakeFiles/stack.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
-.PHONY : src/mystack/CMakeFiles/mystack.dir/rule
+.PHONY : src/collections/stack/CMakeFiles/stack.dir/rule
 
 # Convenience name for target.
-mystack: src/mystack/CMakeFiles/mystack.dir/rule
-.PHONY : mystack
+stack: src/collections/stack/CMakeFiles/stack.dir/rule
+.PHONY : stack
 
 # clean rule for target.
-src/mystack/CMakeFiles/mystack.dir/clean:
-	$(MAKE) $(MAKESILENT) -f src/mystack/CMakeFiles/mystack.dir/build.make src/mystack/CMakeFiles/mystack.dir/clean
-.PHONY : src/mystack/CMakeFiles/mystack.dir/clean
+src/collections/stack/CMakeFiles/stack.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/collections/stack/CMakeFiles/stack.dir/build.make src/collections/stack/CMakeFiles/stack.dir/clean
+.PHONY : src/collections/stack/CMakeFiles/stack.dir/clean
+
+#=============================================================================
+# Target rules for target src/app/CMakeFiles/app.dir
+
+# All Build rule for target.
+src/app/CMakeFiles/app.dir/all:
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/depend
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=3,4 "Built target app"
+.PHONY : src/app/CMakeFiles/app.dir/all
+
+# Build rule for subdir invocation for target.
+src/app/CMakeFiles/app.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 2
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 src/app/CMakeFiles/app.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
+.PHONY : src/app/CMakeFiles/app.dir/rule
+
+# Convenience name for target.
+app: src/app/CMakeFiles/app.dir/rule
+.PHONY : app
+
+# clean rule for target.
+src/app/CMakeFiles/app.dir/clean:
+	$(MAKE) $(MAKESILENT) -f src/app/CMakeFiles/app.dir/build.make src/app/CMakeFiles/app.dir/clean
+.PHONY : src/app/CMakeFiles/app.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

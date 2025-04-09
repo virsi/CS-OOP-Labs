@@ -1,2 +1,0 @@
-/Library/Developer/CommandLineTools/usr/bin/ar qc libmystack.a CMakeFiles/mystack.dir/MyStack.cpp.o
-/Library/Developer/CommandLineTools/usr/bin/ranlib libmystack.a

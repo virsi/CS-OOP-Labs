@@ -39,7 +39,12 @@ endif()
 
 if(NOT CMAKE_INSTALL_LOCAL_ONLY)
   # Include the install script for the subdirectory.
-  include("/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/mystack/cmake_install.cmake")
+  include("/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/collections/stack/cmake_install.cmake")
+endif()
+
+if(NOT CMAKE_INSTALL_LOCAL_ONLY)
+  # Include the install script for the subdirectory.
+  include("/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/src/app/cmake_install.cmake")
 endif()
 
 if(CMAKE_INSTALL_COMPONENT)
