@@ -71,7 +71,18 @@ public:
         this->data[this->size++] = value;
     }
 
-    void delete_element(T value);
+    void delete_element(T value) {
+        for (unsigned i = 0; i < this->size; ++i) {
+            if (this->data[i] == value) {
+                this->data[i] = this->data[this->size - 1];
+                this->size--;
+                break;
+            }
+        }
+
+        this->resize_shrink_if_needed();
+    }
+
     void sort();
     int find(T value);
 
