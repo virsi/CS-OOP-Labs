@@ -1,4 +1,6 @@
 cmake_minimum_required(VERSION 3.23)
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 set(project "lab5")
 project(${project})
@@ -6,7 +8,7 @@ project(${project})
 set(CMAKE_CXX_STANDARD 17)
 
 set(${project}_SOURCES
-        main.cpp)
+        src/main.cpp)
 
 add_subdirectory(containers)
 
