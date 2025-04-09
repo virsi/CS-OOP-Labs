@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++  -arch x86_64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -Wl,-search_paths_first -Wl,-headerpad_max_install_names -L/usr/local/opt/qt/lib CMakeFiles/lab5.dir/tests/test_myvector.cpp.o -o lab5  containers/libcontainers.a

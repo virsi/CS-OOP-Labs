@@ -1,0 +1,6 @@
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/lab5.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles/rebuild_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers/CMakeFiles/containers.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers/CMakeFiles/edit_cache.dir
+/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers/CMakeFiles/rebuild_cache.dir
