@@ -57,20 +57,37 @@ public:
         this->data = new T[this->max_size];
 
         for (unsigned i = 0; i < this->size; ++i) {
-            this->data[i] = v.data[i]
+            this->data[i] = v.data[i];
         }
     }
 
     ~MyVector(){delete[] this->data;}
-    
-    void add_element(char *el);
-    bool delete_element(int i);
-    char *operator[](int i);
+
+    void add_element(T value);
+    bool delete_element(T value);
     void sort();
     int get_size() { return size; }
     int get_max_size() { return max_size; }
-    int find(char *el);
-    MyVector &operator=(MyVector &v);
+    int find(T value);
+
+    MyVector &operator=(MyVector &v) {
+        if (this == v){
+            return *this;
+        }
+        
+        this->size = v.size;
+        this->max_size = v.max_size;
+        delete[] this->data;
+        this->data = new T[this->max_size];
+
+        for (unsigned i = 0; i < this->size; ++i) {
+            this->data[i] = v.data[i];
+        }
+        return *this;
+    };
+
+    T& operator[](int index) { return this->data[index]; }
+
     friend std::ostream &operator<<(std::ostream &out, MyVector &v);
 };
 
