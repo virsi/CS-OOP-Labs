@@ -6,56 +6,53 @@
 #include "myvector.h"
 
 template <typename T>
-    int binary_search(T* data, int left, int right, T value) {
-        if (left > right) {
-            return -1;
-        }
-
-        int mid = (left + right) / 2;
-
-        // If matches.
-        if (compare(data[mid], value) == 0) {
-            return mid;
-        }
-
-        // Left side.
-        if (compare(data[mid], value) < 0) {
-            return binary_search(data, mid + 1, right, value);
-        }
-
-        // Right side.
-        return binary_search(data, left, mid - 1, value);
+int binary_search(T* data, int left, int right, T value) {
+    if (left > right) {
+        return -1;
     }
+
+    int mid = (left + right) / 2;
+
+    // If matches.
+    if (compare(data[mid], value) == 0) {
+        return mid;
+    }
+
+    // Left side.
+    if (compare(data[mid], value) < 0) {
+        return binary_search(data, mid + 1, right, value);
+    }
+
+    // Right side.
+    return binary_search(data, left, mid - 1, value);
+}
 
 template <typename T>
-    void quick_sort(T* data, int left, int right) {
-        if (left >= right) {
-            return;
-        }
-
-        T pivot = data[right];
-        int i = left - 1;
-
-        // Array partition.
-        for (int j = left; j < right; ++j) {
-            // Similar to `if (data[j] < pivot)`.
-            if (compare(data[j], pivot) < 0) {
-                ++i;
-                std::swap(data[i], data[j]);
-            }
-        }
-
-        std::swap(data[i + 1], data[right]);
-
-        quick_sort(data, left, i);
-        quick_sort(data, i + 2, right);
+void quick_sort(T* data, int left, int right) {
+    if (left >= right) {
+        return;
     }
+
+    T pivot = data[right];
+    int i = left - 1;
+
+    // Array partition.
+    for (int j = left; j < right; ++j) {
+        // Similar to `if (data[j] < pivot)`.
+        if (compare(data[j], pivot) < 0) {
+            ++i;
+            std::swap(data[i], data[j]);
+        }
+    }
+
+    std::swap(data[i + 1], data[right]);
+
+    quick_sort(data, left, i);
+    quick_sort(data, i + 2, right);
+}
 
 template <typename T>
 class MySet : public MyVector<T> {
-private:
-    void q_sort() { quick_sort(this->data, 0, this->size - 1); }
-    int q_find(T value) const { return binary_search(this->data, 0, this->size - 1, value); }
 public:
     MySet(T el = T()) : MyVector<T>(el) {};
 
@@ -92,6 +89,9 @@ public:
         }
         return *this;
     }
+
+    void q_sort() { quick_sort(this->data, 0, this->size - 1); }
+    int q_find(T value) const { return binary_search(this->data, 0, this->size - 1, value); }
 
     void add_element(T el) {
         if (this->q_find(el) == -1) { // Используем q_find для быстрого поиска
