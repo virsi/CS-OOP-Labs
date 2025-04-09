@@ -142,29 +142,29 @@ containers/fast:
 	$(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
 .PHONY : containers/fast
 
-tests/test_myvector.o: tests/test_myvector.cpp.o
-.PHONY : tests/test_myvector.o
+tests/test_myset.o: tests/test_myset.cpp.o
+.PHONY : tests/test_myset.o
 
 # target to build an object file
-tests/test_myvector.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myvector.cpp.o
-.PHONY : tests/test_myvector.cpp.o
+tests/test_myset.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.o
+.PHONY : tests/test_myset.cpp.o
 
-tests/test_myvector.i: tests/test_myvector.cpp.i
-.PHONY : tests/test_myvector.i
+tests/test_myset.i: tests/test_myset.cpp.i
+.PHONY : tests/test_myset.i
 
 # target to preprocess a source file
-tests/test_myvector.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myvector.cpp.i
-.PHONY : tests/test_myvector.cpp.i
+tests/test_myset.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.i
+.PHONY : tests/test_myset.cpp.i
 
-tests/test_myvector.s: tests/test_myvector.cpp.s
-.PHONY : tests/test_myvector.s
+tests/test_myset.s: tests/test_myset.cpp.s
+.PHONY : tests/test_myset.s
 
 # target to generate assembly for a file
-tests/test_myvector.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myvector.cpp.s
-.PHONY : tests/test_myvector.cpp.s
+tests/test_myset.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.s
+.PHONY : tests/test_myset.cpp.s
 
 # Help Target
 help:
@@ -176,9 +176,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... containers"
 	@echo "... lab5"
-	@echo "... tests/test_myvector.o"
-	@echo "... tests/test_myvector.i"
-	@echo "... tests/test_myvector.s"
+	@echo "... tests/test_myset.o"
+	@echo "... tests/test_myset.i"
+	@echo "... tests/test_myset.s"
 .PHONY : help
 
 

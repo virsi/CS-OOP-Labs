@@ -6,6 +6,26 @@
 #include "myvector.h"
 
 template <typename T>
+    T transform(char* token) {
+        return T(token);
+    }
+
+    template <>
+    int transform(char* token) {
+        return std::atoi(token);
+    }
+
+    template <typename T>
+    int compare(const T& left, const T& right) {
+        return left - right;
+    }
+
+    template <>
+    int compare(char* const& left, char* const& right) {
+        return std::strcmp(left, right);
+    }
+
+template <typename T>
 int binary_search(T* data, int left, int right, T value) {
     if (left > right) {
         return -1;
@@ -54,7 +74,7 @@ void quick_sort(T* data, int left, int right) {
 template <typename T>
 class MySet : public MyVector<T> {
 public:
-    MySet(T el = T()) : MyVector<T>(el) {};
+    MySet() : MyVector<T>() {}; // Убрали аргумент el
 
     bool operator==(MySet &s) {
         if (this->size != s.size) return false;
@@ -105,7 +125,23 @@ public:
         q_sort(); // Сортируем после удаления
     }
 
-    friend std::ostream &operator<<(std::ostream &out, MySet &s);
+    friend std::ostream &operator<<(std::ostream &out, MySet<T> &s) {
+        if (s.get_size() == 0) {
+            out << "Пустое множество";
+            return out;
+        }
+
+        out << "[";
+        for (int i = 0; i < s.get_size(); ++i) {
+            out << s.data[i];
+            if (i != s.get_size() - 1) {
+                out << ", ";
+            }
+        }
+        out << "]";
+        return out;
+    }
+
     friend MySet operator+(MySet &s1, MySet &s2) {
         MySet result = s1;
         result += s2;

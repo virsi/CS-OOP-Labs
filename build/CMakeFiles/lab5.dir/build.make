@@ -69,28 +69,28 @@ include CMakeFiles/lab5.dir/progress.make
 # Include the compile flags for this target's objects.
 include CMakeFiles/lab5.dir/flags.make
 
-CMakeFiles/lab5.dir/tests/test_myvector.cpp.o: CMakeFiles/lab5.dir/flags.make
-CMakeFiles/lab5.dir/tests/test_myvector.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myvector.cpp
-CMakeFiles/lab5.dir/tests/test_myvector.cpp.o: CMakeFiles/lab5.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab5.dir/tests/test_myvector.cpp.o"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab5.dir/tests/test_myvector.cpp.o -MF CMakeFiles/lab5.dir/tests/test_myvector.cpp.o.d -o CMakeFiles/lab5.dir/tests/test_myvector.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myvector.cpp
+CMakeFiles/lab5.dir/tests/test_myset.cpp.o: CMakeFiles/lab5.dir/flags.make
+CMakeFiles/lab5.dir/tests/test_myset.cpp.o: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myset.cpp
+CMakeFiles/lab5.dir/tests/test_myset.cpp.o: CMakeFiles/lab5.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green --progress-dir=/Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Building CXX object CMakeFiles/lab5.dir/tests/test_myset.cpp.o"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -MD -MT CMakeFiles/lab5.dir/tests/test_myset.cpp.o -MF CMakeFiles/lab5.dir/tests/test_myset.cpp.o.d -o CMakeFiles/lab5.dir/tests/test_myset.cpp.o -c /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myset.cpp
 
-CMakeFiles/lab5.dir/tests/test_myvector.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab5.dir/tests/test_myvector.cpp.i"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myvector.cpp > CMakeFiles/lab5.dir/tests/test_myvector.cpp.i
+CMakeFiles/lab5.dir/tests/test_myset.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Preprocessing CXX source to CMakeFiles/lab5.dir/tests/test_myset.cpp.i"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myset.cpp > CMakeFiles/lab5.dir/tests/test_myset.cpp.i
 
-CMakeFiles/lab5.dir/tests/test_myvector.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab5.dir/tests/test_myvector.cpp.s"
-	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myvector.cpp -o CMakeFiles/lab5.dir/tests/test_myvector.cpp.s
+CMakeFiles/lab5.dir/tests/test_myset.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color "--switch=$(COLOR)" --green "Compiling CXX source to assembly CMakeFiles/lab5.dir/tests/test_myset.cpp.s"
+	/Library/Developer/CommandLineTools/usr/bin/c++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/tests/test_myset.cpp -o CMakeFiles/lab5.dir/tests/test_myset.cpp.s
 
 # Object files for target lab5
 lab5_OBJECTS = \
-"CMakeFiles/lab5.dir/tests/test_myvector.cpp.o"
+"CMakeFiles/lab5.dir/tests/test_myset.cpp.o"
 
 # External object files for target lab5
 lab5_EXTERNAL_OBJECTS =
 
-lab5: CMakeFiles/lab5.dir/tests/test_myvector.cpp.o
+lab5: CMakeFiles/lab5.dir/tests/test_myset.cpp.o
 lab5: CMakeFiles/lab5.dir/build.make
 lab5: containers/libcontainers.a
 lab5: CMakeFiles/lab5.dir/link.txt
