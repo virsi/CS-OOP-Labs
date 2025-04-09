@@ -2,7 +2,7 @@
 #define INHERITANCE_MYSET_H
 
 #include <iostream>
-
+#include <string>
 #include "myvector.h"
 
 template <typename T>
@@ -17,7 +17,11 @@ template <typename T>
 
     template <typename T>
     int compare(const T& left, const T& right) {
-        return left - right;
+        if constexpr (std::is_same_v<T, std::string>) {
+            return left.compare(right); // Используем метод compare для строк
+        } else {
+            return left - right; // Для остальных типов
+        }
     }
 
     template <>
@@ -33,17 +37,14 @@ int binary_search(T* data, int left, int right, T value) {
 
     int mid = (left + right) / 2;
 
-    // If matches.
-    if (compare(data[mid], value) == 0) {
+    if (compare(data[mid], value) == 0) { // Исправлено
         return mid;
     }
 
-    // Left side.
-    if (compare(data[mid], value) < 0) {
+    if (compare(data[mid], value) < 0) { // Исправлено
         return binary_search(data, mid + 1, right, value);
     }
 
-    // Right side.
     return binary_search(data, left, mid - 1, value);
 }
 
@@ -56,10 +57,8 @@ void quick_sort(T* data, int left, int right) {
     T pivot = data[right];
     int i = left - 1;
 
-    // Array partition.
     for (int j = left; j < right; ++j) {
-        // Similar to `if (data[j] < pivot)`.
-        if (compare(data[j], pivot) < 0) {
+        if (compare(data[j], pivot) < 0) { // Исправлено
             ++i;
             std::swap(data[i], data[j]);
         }
@@ -107,6 +106,12 @@ public:
                 --i; // Корректируем индекс после удаления
             }
         }
+        return *this;
+    }
+
+    MySet &operator=(const MySet &s) {
+        if (this == &s) return *this; // Проверка на самоприсваивание
+        MyVector<T>::operator=(s);   // Вызов оператора = базового класса
         return *this;
     }
 

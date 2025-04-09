@@ -142,29 +142,29 @@ containers/fast:
 	$(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
 .PHONY : containers/fast
 
-tests/test_myset.o: tests/test_myset.cpp.o
-.PHONY : tests/test_myset.o
+src/main.o: src/main.cpp.o
+.PHONY : src/main.o
 
 # target to build an object file
-tests/test_myset.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.o
-.PHONY : tests/test_myset.cpp.o
+src/main.cpp.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/src/main.cpp.o
+.PHONY : src/main.cpp.o
 
-tests/test_myset.i: tests/test_myset.cpp.i
-.PHONY : tests/test_myset.i
+src/main.i: src/main.cpp.i
+.PHONY : src/main.i
 
 # target to preprocess a source file
-tests/test_myset.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.i
-.PHONY : tests/test_myset.cpp.i
+src/main.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/src/main.cpp.i
+.PHONY : src/main.cpp.i
 
-tests/test_myset.s: tests/test_myset.cpp.s
-.PHONY : tests/test_myset.s
+src/main.s: src/main.cpp.s
+.PHONY : src/main.s
 
 # target to generate assembly for a file
-tests/test_myset.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/tests/test_myset.cpp.s
-.PHONY : tests/test_myset.cpp.s
+src/main.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/lab5.dir/build.make CMakeFiles/lab5.dir/src/main.cpp.s
+.PHONY : src/main.cpp.s
 
 # Help Target
 help:
@@ -176,9 +176,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... containers"
 	@echo "... lab5"
-	@echo "... tests/test_myset.o"
-	@echo "... tests/test_myset.i"
-	@echo "... tests/test_myset.s"
+	@echo "... src/main.o"
+	@echo "... src/main.i"
+	@echo "... src/main.s"
 .PHONY : help
 
 
