@@ -7,10 +7,10 @@ project(${project})
 
 set(CMAKE_CXX_STANDARD 17)
 
-# set(${project}_SOURCES
-#         src/main.cpp)
 set(${project}_SOURCES
-        tests/test_myvector.cpp)
+        src/main.cpp)
+# set(${project}_SOURCES
+#         tests/test_myvector.cpp)
 
 add_subdirectory(containers)
 
