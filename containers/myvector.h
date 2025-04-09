@@ -83,8 +83,14 @@ public:
         this->resize_shrink_if_needed();
     }
 
-    void sort();
-    int find(T value);
+    int find(T value) const {
+        for (unsigned i = 0; i < this->size; ++i) {
+            if (this->data[i] == value) {
+                return i;
+            }
+        }
+        return -1;
+    }
 
     MyVector &operator=(MyVector &v) {
         if (this == v){
