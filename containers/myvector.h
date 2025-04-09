@@ -93,7 +93,7 @@ public:
     }
 
     MyVector &operator=(MyVector &v) {
-        if (this == v){
+        if (this == &v) { // Исправлено: сравнение указателя this с адресом v
             return *this;
         }
 
