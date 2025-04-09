@@ -63,11 +63,16 @@ public:
 
     ~MyVector(){delete[] this->data;}
 
-    void add_element(T value);
-    bool delete_element(T value);
+    int get_size() const { return size; }
+    int get_max_size() const { return max_size; }
+
+    void add_element(T value) {
+        this->resize_grow_if_needed();
+        this->data[this->size++] = value;
+    }
+
+    void delete_element(T value);
     void sort();
-    int get_size() { return size; }
-    int get_max_size() { return max_size; }
     int find(T value);
 
     MyVector &operator=(MyVector &v) {
