@@ -1,55 +1,53 @@
 #pragma once
 #include <iostream>
-#include "../MyVector/MyVector.hpp"
+#include "../collections/vector.hpp"
 
-class Term {
-private:
-    int coefficient;
-    int exponent;
-    friend Polynomial;
-public:
-    Term();
-    Term(int coef): coefficient(coef) {};
-    Term(int coeff, int exp): coefficient(coeff), exponent(exp) {};
-    ~Term();
+namespace polynomial {
+    namespace term {
+        class Term {
+            private:
+                int coefficient = 0;
+                int exponent = 0;
+                friend class Polynomial;
 
-    static Term parse(char*& el);
-    void writeToStream(std::ostream& out, bool as_sequence = false) const;
+            public:
+                Term(int coefficient = 0, int exponent = 0);
+                ~Term() = default;
 
-    bool isZero() const;
+                static Term parse(char*& el);
+                void writeToStream(std::ostream& out, bool as_sequence = false) const;
 
-    bool operator==(const Term& other) const;
-    bool operator<(const Term& other) const;
-    Term operator+(const Term& other) const;
-    Term operator*(const Term& other) const;
+                bool isZero() const;
 
-    friend std::ostream& operator<<(std::ostream& out, const Term& term);
-    friend std::istream& operator>>(std::istream& in, Term& term);
-};
+                bool operator==(const Term& other) const;
+                bool operator<(const Term& other) const;
+                Term operator+(const Term& other) const;
+                Term operator*(const Term& other) const;
+                // Term operator*(const Term& other) const;
 
+                friend std::ostream& operator<<(std::ostream& out, const Term& term);
+                friend std::istream& operator>>(std::istream& is, Term& term);
+        };
+    }  // namespace term
 
-class Polynomial {
-private:
-    MyVector<Term> poly;
-    int exponent;
+    class Polynomial {
+        private:
+            vector::Vec<term::Term> poly = {};
+            bool ascending = false;
 
-public:
-    Polynomial();
-    Polynomial(int n);
-    Polynomial(Term term);
-    Polynomial(Polynomial& p) {poly = p.poly; exponent = p.exponent;}
-    ~Polynomial();
+        public:
+            Polynomial() = default;
+            Polynomial(int n);
+            Polynomial(term::Term term);
+            Polynomial(const Polynomial& other); // Конструктор копирования
 
-    void operator+=(const Polynomial& other);
-    void operator*=(const Polynomial& other);
-    void operator==(const Polynomial& other);
+            void operator+=(const Polynomial& other);
+            void operator*=(const Polynomial& other);
 
-    friend Polynomial operator+(const Polynomial& left, const Polynomial& right);
-    friend Polynomial operator*(const Polynomial& left, const Polynomial& right);
+            friend Polynomial operator+(const Polynomial& left, const Polynomial& right);
+            friend Polynomial operator*(const Polynomial& left, const Polynomial& right);
 
-    friend std::ostream& operator<<(std::ostream& out, const Polynomial& poly);
-    friend std::istream& operator>>(std::istream& is, Polynomial& poly);
-
-
-
-};
+            friend std::ostream& operator<<(std::ostream& out, const Polynomial& poly);
+            friend std::istream& operator>>(std::istream& is, Polynomial& poly);
+    };
+}  // namespace polynomial

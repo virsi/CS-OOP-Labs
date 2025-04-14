@@ -4,13 +4,12 @@ set(p "collections")
 project(p)
 
 set(${p}_SOURCES
-MyVector.cpp
+  vector.cpp
 )
 
 set(${p}_HEADERS
-  MyVector.hpp
+  vector.hpp
 )
 
 add_library(${p} STATIC ${${p}_SOURCES} ${${p}_HEADERS})
 set_target_properties(${p} PROPERTIES LINKER_LANGUAGE CXX)
-
