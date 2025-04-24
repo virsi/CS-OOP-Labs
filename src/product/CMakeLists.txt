@@ -1,15 +1,15 @@
 cmake_minimum_required(VERSION 3.23)
 
-set(project "collections")
+set(project "product")
 project(${project})
 
 set(CMAKE_CXX_STANDARD 17)
 
 set(${project}_SOURCES
-        myvector.cpp)
+product.cpp)
 
 set(${project}_HEADERS
-        myvector.h)
+product.h)
 
 set(${project}_SOURCE_LIST
         ${${project}_SOURCES}
