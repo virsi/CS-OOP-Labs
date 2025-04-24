@@ -1,2 +1,2 @@
 # CS-OOP-Labs
-for BMSTU labs :)
+for BMSTU CS labs :)
