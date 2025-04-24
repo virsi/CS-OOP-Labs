@@ -14,8 +14,8 @@ class Product {
         virtual ~Product();
 
         char* getName();
-        virtual int getWeight();
-        virtual int getCost();
+        virtual int getWeight() const;
+        virtual int getCost() const;
         char* getMaterial();
 
         void setName(const char* newName);
@@ -40,6 +40,28 @@ class Assembly : public Product {
         MyVector<Product*> components;
 
     public:
-        int getWeight() override;
-        int getCost() override;
+        Assembly();
+        Assembly(char* name, int weight, int cost, char* material);
+        ~Assembly() override;
+        int getWeight() const override;
+        int getCost() const override;
+        MyVector<Product*>& getComponents() {
+            return components;
+        }
+};
+
+class Mechanism : public Product {
+    private:
+        MyVector<Product*> components;
+    public:
+        Mechanism(); // Конструктор по умолчанию
+        Mechanism(char* name, int weight, int cost, char* material);
+        ~Mechanism() override;
+
+        void addComponent(Product* item) {
+            components.add_element(item);
+        }
+
+        int getWeight() const override;
+        int getCost() const override;
 };
