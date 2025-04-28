@@ -8,10 +8,10 @@ project(${project})
 set(CMAKE_CXX_STANDARD 20)
 
 set(${project}_SOURCES
-        src/main.cpp src/StringTask/tasks.cpp)
+        src/main.cpp src/StringTasks/tasks.cpp)
 
 set(${project}_HEADERS
-        src/StringTask/tasks.h)
+        src/StringTasks/tasks.h)
 
 # add_subdirectory(src/collections)
 # add_subdirectory(src/app)

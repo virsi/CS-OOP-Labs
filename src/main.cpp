@@ -1,4 +1,5 @@
-#include "./StringTask/tasks.h"
+#include "./StringTasks/tasks.h"
+#include "./VectorTasks/tasks.h"
 #include <iostream>
 #include <string>
 #include <locale>
@@ -25,12 +26,25 @@ int main() {
 
     // task 3
     std::cout << "TASK 3" << std::endl;
-    std::wstring str3 = L"мой ник в игре WarThunder Нагибатор228";
-    std::wcout << L"Original string: " << str3 << std::endl;
+    try {
+        task3();
+    }
+    catch(const std::exception& e) {
+        std::cerr << e.what() << '\n';
+    }
 
-    std::wstring result3 = task2(str3);
-    std::wcout << L"Processed string: " << result3 << '\n' << std::endl;
+    // task 4
+    std::vector<int> vec = createRandomVector();
+    std::cout << "Initial vector: ";
+    printVector(vec);
 
-    task3();
+    doubleVectorElements(vec);
+    std::cout << "Doubled vector: ";
+    printVector(vec);
+
+    removeElementAtIndex(vec, 2);
+    std::cout << "Vector after removing element at index 2: ";
+    printVector(vec);
+
     return 0;
 }
