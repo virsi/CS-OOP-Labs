@@ -1,4 +1,4 @@
-# Install script for directory: /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/containers
+# Install script for directory: /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/containers
 
 # Set the install prefix
 if(NOT DEFINED CMAKE_INSTALL_PREFIX)

@@ -72,5 +72,21 @@ int main() {
     else
         std::cout << "Множество s1!=s3\n";
 
+
+    char* wert = new char[5]{"wert"};
+    char* wert1  = new char[6]{"wert3"};
+    MyVector<char*> v3;
+    v3.add_element(wert);
+    v3.add_element(wert1);
+    std::cout << v3 << std::endl;
+    delete [] wert;
+    delete [] wert1;
+    MyVector<char*> v2 = v3;
+    v2.add_element("de");
+
+    std::cout << v3 << std::endl;
+    std::cout << v2 << std::endl;
+
+
     return 0;
 }

@@ -57,10 +57,10 @@ RM = /usr/local/Cellar/cmake/3.30.3/bin/cmake -E rm -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs
+CMAKE_SOURCE_DIR = /Users/EV/Desktop/CS-OOP-Labs-lab5-myset
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build
+CMAKE_BINARY_DIR = /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -87,14 +87,14 @@ rebuild_cache/fast: rebuild_cache
 
 # The main all target
 all: cmake_check_build_system
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/containers//CMakeFiles/progress.marks
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build/CMakeFiles 0
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build/CMakeFiles /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build/containers//CMakeFiles/progress.marks
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/clean
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/clean
 .PHONY : clean
 
 # The main clean target
@@ -103,22 +103,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/preinstall
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/preinstall
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
 containers/CMakeFiles/containers.dir/rule:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/CMakeFiles/containers.dir/rule
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 containers/CMakeFiles/containers.dir/rule
 .PHONY : containers/CMakeFiles/containers.dir/rule
 
 # Convenience name for target.
@@ -127,7 +127,7 @@ containers: containers/CMakeFiles/containers.dir/rule
 
 # fast build rule for target.
 containers/fast:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/build
 .PHONY : containers/fast
 
 myset.o: myset.cpp.o
@@ -135,7 +135,7 @@ myset.o: myset.cpp.o
 
 # target to build an object file
 myset.cpp.o:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.o
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.o
 .PHONY : myset.cpp.o
 
 myset.i: myset.cpp.i
@@ -143,7 +143,7 @@ myset.i: myset.cpp.i
 
 # target to preprocess a source file
 myset.cpp.i:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.i
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.i
 .PHONY : myset.cpp.i
 
 myset.s: myset.cpp.s
@@ -151,7 +151,7 @@ myset.s: myset.cpp.s
 
 # target to generate assembly for a file
 myset.cpp.s:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.s
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myset.cpp.s
 .PHONY : myset.cpp.s
 
 myvector.o: myvector.cpp.o
@@ -159,7 +159,7 @@ myvector.o: myvector.cpp.o
 
 # target to build an object file
 myvector.cpp.o:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.o
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.o
 .PHONY : myvector.cpp.o
 
 myvector.i: myvector.cpp.i
@@ -167,7 +167,7 @@ myvector.i: myvector.cpp.i
 
 # target to preprocess a source file
 myvector.cpp.i:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.i
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.i
 .PHONY : myvector.cpp.i
 
 myvector.s: myvector.cpp.s
@@ -175,7 +175,7 @@ myvector.s: myvector.cpp.s
 
 # target to generate assembly for a file
 myvector.cpp.s:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.s
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(MAKE) $(MAKESILENT) -f containers/CMakeFiles/containers.dir/build.make containers/CMakeFiles/containers.dir/myvector.cpp.s
 .PHONY : myvector.cpp.s
 
 # Help Target
@@ -204,6 +204,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /Users/EV/Desktop/BMSTU/ПКШ/CS-OOP-Labs/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /Users/EV/Desktop/CS-OOP-Labs-lab5-myset/build && $(CMAKE_COMMAND) -S$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 
