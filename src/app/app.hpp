@@ -1,6 +1,6 @@
 #pragma once
 #include <iostream>
-#include "../polynomial/polynomial.hpp"
+#include "../Polynomial/Polynomial.hpp"
 
 namespace app {
     void RunExample();

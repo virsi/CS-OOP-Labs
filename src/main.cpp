@@ -1,6 +1,6 @@
 #include <iostream>
-#include "app/app.hpp"
-#include "polynomial/polynomial.hpp"
+#include "./app/app.hpp"
+#include "./Polynomial/Polynomial.hpp"
 
 int main() {
     app::RunExample();

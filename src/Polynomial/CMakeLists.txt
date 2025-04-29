@@ -4,11 +4,11 @@ set(p "polynomial")
 project(p)
 
 set(${p}_SOURCES
-  polynomial.cpp
+  Polynomial.cpp
 )
 
 set(${p}_HEADERS
-  polynomial.hpp
+  Polynomial.hpp
 )
 
 add_library(${p} STATIC ${${p}_SOURCES} ${${p}_HEADERS})
