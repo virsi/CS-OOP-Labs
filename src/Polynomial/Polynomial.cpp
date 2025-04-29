@@ -1,4 +1,4 @@
-#include "polynomial.hpp"
+#include "Polynomial.hpp"
 namespace {
     int BUFSIZE = 1024;
 }
