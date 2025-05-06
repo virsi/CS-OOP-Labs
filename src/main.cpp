@@ -14,7 +14,7 @@ int main() {
 
     // task 1
     std::cout << "TASK 1" << std::endl;
-    std::wstring str1 = L"фак си";
+    std::wstring str1 = L"Егор Воробьев";
     std::wcout << L"Original string: " << str1 << std::endl;
 
     std::wstring result1 = task1(str1);
