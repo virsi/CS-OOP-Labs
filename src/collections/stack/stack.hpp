@@ -73,5 +73,33 @@ namespace stack {
             T peek() const { return this->top->value; }
 
             int get_size() const { return this->size; }
+
+            Stack& operator=(const Stack& stack) {
+                if (this == &stack) {
+                    return *this;
+                }
+
+                while (top != nullptr) {
+                    Node<T, Stack<T>>* node = top;
+                    top = top->next;
+                    delete node;
+                }
+                this->size = 0;
+
+                auto buf = new T[stack.size];
+                Node<T, Stack<T>>* node = stack.top;
+
+                for (int i = stack.size - 1; i >= 0; --i) {
+                    buf[i] = node->value;
+                    node = node->next;
+                }
+
+                for (int i = 0; i < stack.size; ++i) {
+                    this->push(buf[i]);
+                }
+
+                delete[] buf;
+                return *this;
+            }
     };
 }  // namespace stack
