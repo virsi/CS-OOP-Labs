@@ -17,8 +17,14 @@ namespace polynomial {
             }
 
             int k = std::abs(this->coefficient);
-            if (k > 1) {
+
+            if (this->exponent == 0) {
+                // Для свободного члена выводим коэффициент полностью (включая -1 и 1)
                 out << k;
+            } else {
+                if (k > 1) {
+                    out << k;
+                }
             }
 
             switch (this->exponent) {
@@ -55,15 +61,17 @@ namespace polynomial {
             }
 
             int coefficient = 0;
+            bool has_digits = false;
             if (std::isdigit(*el)) {
                 while (std::isdigit(*el)) {
                     coefficient = coefficient * 10 + (*el - '0');
                     ++el;
+                    has_digits = true;
                 }
-            } else {
+            }
+            if (!has_digits) {
                 coefficient = 1;  // Если коэффициент не указан, он равен 1
             }
-
             coefficient *= sign;
 
             if (*el != 'x') {
@@ -81,12 +89,15 @@ namespace polynomial {
             ++el;  // Пропуск символа '^'
 
             int exponent = 0;
+            bool exp_digits = false;
             if (std::isdigit(*el)) {
                 while (std::isdigit(*el)) {
                     exponent = exponent * 10 + (*el - '0');
                     ++el;
+                    exp_digits = true;
                 }
-            } else {
+            }
+            if (!exp_digits) {
                 exponent = 1;  // Если степень не указана, она равна 1
             }
 
@@ -180,6 +191,24 @@ namespace polynomial {
             result.poly.sort(result.ascending);
         }
 
+        // Удаляем нулевые члены из результата
+        for (int i = 0; i < result.poly.size(); ++i) {
+            if (result.poly[i].isZero()) {
+                result.poly.remove(i);
+                --i;
+            }
+        }
+
+        // Сортируем и объединяем одинаковые степени
+        result.poly.sort(result.ascending);
+        for (int i = 1; i < result.poly.size(); ++i) {
+            if (result.poly[i].getExponent() == result.poly[i-1].getExponent()) {
+                result.poly[i-1] = result.poly[i-1] + result.poly[i];
+                result.poly.remove(i);
+                --i;
+            }
+        }
+        // Удаляем нулевые члены после объединения
         for (int i = 0; i < result.poly.size(); ++i) {
             if (result.poly[i].isZero()) {
                 result.poly.remove(i);
@@ -204,8 +233,16 @@ namespace polynomial {
 
     std::ostream& operator<<(std::ostream& out, const Polynomial& polynomial) {
         // `Poly` should be sorted
+        bool has_nonzero = false;
         for (int i = 0; i < polynomial.poly.size(); ++i) {
-            polynomial.poly[i].writeToStream(out, i != 0);
+            if (!polynomial.poly[i].isZero()) {
+                polynomial.poly[i].writeToStream(out, has_nonzero);
+                has_nonzero = true;
+            }
+        }
+        // Если не было ни одного ненулевого члена, выводим 0
+        if (!has_nonzero) {
+            out << "0 ";
         }
         return out;
     }
@@ -216,9 +253,19 @@ namespace polynomial {
 
         char* el = buffer;
         while (*el != '\0') {
-            polynomial += term::Term::parse(el);
+            term::Term t = term::Term::parse(el);
+            if (!t.isZero()) {
+                polynomial += t;
+            }
+            // Пропуск лишних символов между членами (например, '+', '-')
+            while (*el == ' ' || *el == '+' || *el == '-') {
+                // Если это знак, не пропускаем, чтобы парсер увидел его
+                if (*el == '+' || *el == '-') break;
+                ++el;
+            }
         }
 
+        delete[] buffer;
         return is;
     }
 }  // namespace polynomial

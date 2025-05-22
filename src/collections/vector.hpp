@@ -116,6 +116,9 @@ namespace vector {
                     }
                 }
             }
+            void clear() {
+                this->_size = 0;
+            }
             int binary_search(T value, bool ascending = true) const {
                 return _binary_search(this->data, 0, this->_size - 1, value, ascending);
             }

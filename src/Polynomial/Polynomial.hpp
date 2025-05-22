@@ -25,6 +25,10 @@ namespace polynomial {
                 Term operator*(const Term& other) const;
                 // Term operator*(const Term& other) const;
 
+                int getExponent() const {
+                    return this->exponent;
+                }
+
                 friend std::ostream& operator<<(std::ostream& out, const Term& term);
                 friend std::istream& operator>>(std::istream& is, Term& term);
         };
