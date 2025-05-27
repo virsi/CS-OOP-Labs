@@ -76,11 +76,6 @@ Detail::~Detail() {
     ;
 }
 
-void Detail::show() {
-    std::cout << "Detail -> ";
-    Product::show();
-}
-
 // Assembly
 Assembly::Assembly() : Product() {
     std::cout << "Assembly()" << std::endl;

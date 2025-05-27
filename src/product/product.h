@@ -23,7 +23,7 @@ class Product {
         void setCost(int newCost);
         void setMaterial(const char* newMaterial);
 
-        virtual void show();
+        void show();
 };
 
 class Detail : public Product {
@@ -31,8 +31,6 @@ class Detail : public Product {
         Detail();
         Detail(char* name, int weight, int cost, char* material);
         virtual ~Detail();
-
-        virtual void show();
 };
 
 class Assembly : public Product {
